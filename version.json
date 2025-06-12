@@ -1,6 +1,6 @@
 {
     "version": "202506112",
     "changes": "Changelog:\n202506110:\n  Fix some branding",
-    "download": "http://localhost:3005/downloads/installer.exe",
+    "download": "https://github.com/haivt-metric/data-agents/releases/download/test/installer.exe",
     "packed": "http://localhost:3005/downloads/mini_installer.exe"
 }
