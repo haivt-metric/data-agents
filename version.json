@@ -1,6 +1,6 @@
 {
     "version": "202506113",
     "changes": "Changelog:\n202506110:\n  Fix some branding",
-    "download": "https://github.com/haivt-metric/data-agents/raw/refs/heads/main/installer.exe",
-    "packed": "https://github.com/haivt-metric/data-agents/releases/download/test/mini_installer.exe"
+    "download": "https://download.metric.com.vn/browsers/v1.0.0/windows/installer.exe",
+    "packed": "https://download.metric.com.vn/browsers/v1.0.0/windows/mini_installer.exe"
 }
