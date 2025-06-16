@@ -1,17 +1,3 @@
-// ==UserScript==
-// @name         New Userscript
-// @namespace    http://tampermonkey.net/
-// @version      2025-06-12
-// @description  try to take over the world!
-// @author       You
-// @match        https://shopee.vn/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=shopee.vn
-// @grant        none
-// @require      https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js
-// ==/UserScript==
-
-
-
 var a=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports);var b=a((i3,z)=>{z.exports=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\r
 <path d="M19.5 4.5L4.5 19.5" stroke="#9D97BF" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round"/>\r
 <path d="M4.5 4.5L19.5 19.5" stroke="#9D97BF" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round"/>\r
@@ -68,7 +54,7 @@ var a=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports);var b=a((i3,z)=>{z
         <div style="display: flex; justify-content: center;flex-direction: column;align-items: center; margin-top: 4rem; margin-bottom: 4rem">
                 ${y()}
                 <div style="font: 18px; font-weight: bold; margin-top: 1rem;">
-                Lưu ý
+                Lưu ý 
                 </div>
                 <div style="color: #716B95; margin-top: 1rem; text-align: center; padding-left: 2rem;padding-right: 2rem">
                 Để tải danh sách sản phẩm vui lòng truy cập trang Danh sách sản phẩm của ngành hàng/Shop/Tìm kiếm sản phẩm
@@ -93,12 +79,12 @@ var a=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports);var b=a((i3,z)=>{z
         <div style="display: flex; justify-content: center;flex-direction: column;align-items: center; margin-top: 4rem; margin-bottom: 4rem">
                 ${y()}
                 <div style="font: 18px; font-weight: bold; margin-top: 1rem;">
-                Lưu ý
+                Lưu ý 
                 </div>
                 <div style="color: #716B95; margin-top: 1rem">
                 Để tải đánh giá sản phẩm vui lòng truy cập trang chi tiết 1 sản phẩm
                 </div>
         </div>
-        `));return e}function e3(n){let e=G(n),t=Q(n);t.style.display="none";let o=document.createElement("div");return o.classList=["da-crawl-items-dialog"],o.style="padding: 1rem; padding-top: 0.6rem;",o.appendChild(W([{text:"Sản phẩm",click:()=>{e.style.display="block",t.style.display="none"}},{text:"Đánh giá sản phẩm",click:()=>{e.style.display="none",t.style.display="block"}}])),o.appendChild(e),o.appendChild(t),o}function t3(){let n=document.createElement("div");n.id="da-float-area",n.style="background: rgba(0,0,0,0); position: fixed; width: 60px; left: 20px; bottom: 20px; display: flex; flex-direction: column-reverse; gap: 1em";let e=!1,t="background: white; cursor: pointer; border: 1px solid #D7D1F9; border-radius: 10px; width: 60px; height: 60px; overflow: hidden;",o=document.createElement("div");o.innerHTML=q(),o.style=t+";border-color: #FF733F;",o.role="button",n.appendChild(o);let r=document.createElement("div");r.innerHTML=F(),r.style=t,r.style.display="none",r.role="button",n.appendChild(r),o.addEventListener("click",()=>{if(e=!e,e)o.style.backgroundColor="#FDEEE7",r.style.display="block";else o.style.backgroundColor="white",r.style.display="none"}),r.addEventListener("click",()=>{if(!document.querySelector(".da-crawl-items-dialog")){let l={},i=P({title:"Danh sách sản phẩm",body:e3(l)});l.hide=i.hide}}),document.body.appendChild(n)}V.exports=()=>{setInterval(()=>{if(!document.getElementById("da-float-area"))t3()},1000)}});var I=a((h3,H)=>{function o3(){let n=document.createElement("div");n.id="da-float-auth",n.style="position: fixed; top: 0; left: 0; width:100vw;height:100vh;background: black;z-index: 9999999999999999";let e=document.createElement("iframe");e.src="https://staging-metric.muadee.vn/authorize",e.width="100%",e.height="100%",n.appendChild(e),document.body.appendChild(n)}function B(){if(!document.getElementById("da-float-auth")&&localStorage.getItem("__enable_data_agents")!=="true")o3()}H.exports=()=>{B(),setInterval(()=>{B()},1000)};window.onmessage=(n)=>{if(JSON.parse(n.data)?.enableExtension)localStorage.setItem("__enable_data_agents","true"),setTimeout(()=>document.getElementById("da-float-auth").style.display="none",3000)}});if(window.location.hostname.includes("shopee.vn"))Z()();I()();
+        `));return e}function e3(n){let e=G(n),t=Q(n);t.style.display="none";let o=document.createElement("div");return o.classList=["da-crawl-items-dialog"],o.style="padding: 1rem; padding-top: 0.6rem;",o.appendChild(W([{text:"Sản phẩm",click:()=>{e.style.display="block",t.style.display="none"}},{text:"Đánh giá sản phẩm",click:()=>{e.style.display="none",t.style.display="block"}}])),o.appendChild(e),o.appendChild(t),o}function t3(){let n=document.createElement("div");n.id="da-float-area",n.style="background: rgba(0,0,0,0); position: fixed; width: 60px; left: 20px; bottom: 20px; display: flex; flex-direction: column-reverse; gap: 1em";let e=!1,t="background: white; cursor: pointer; border: 1px solid #D7D1F9; border-radius: 10px; width: 60px; height: 60px; overflow: hidden;",o=document.createElement("div");o.innerHTML=q(),o.style=t+";border-color: #FF733F;",o.role="button",n.appendChild(o);let r=document.createElement("div");r.innerHTML=F(),r.style=t,r.style.display="none",r.role="button",n.appendChild(r),o.addEventListener("click",()=>{if(e=!e,e)o.style.backgroundColor="#FDEEE7",r.style.display="block";else o.style.backgroundColor="white",r.style.display="none"}),r.addEventListener("click",()=>{if(!document.querySelector(".da-crawl-items-dialog")){let l={},i=P({title:"Danh sách sản phẩm",body:e3(l)});l.hide=i.hide}}),document.body.appendChild(n)}V.exports=()=>{setInterval(()=>{if(!document.getElementById("da-float-area"))t3()},1000)}});var I=a((h3,H)=>{function o3(){let n=document.createElement("div");n.id="da-float-auth",n.style="position: fixed; top: 0; left: 0; width:100vw;height:100vh;background: black;z-index: 9999999999999999";let e=document.createElement("iframe");e.src="https://staging-metric.muadee.vn/authorize",e.width="100%",e.height="100%",n.appendChild(e),document.body.appendChild(n)}function B(){if(!document.getElementById("da-float-auth")&&localStorage.getItem("__enable_data_agents")!=="true")o3()}H.exports=()=>{try{B()}catch(n){}setInterval(()=>{B()},1000)};window.onmessage=(n)=>{if(JSON.parse(n.data)?.enableExtension)localStorage.setItem("__enable_data_agents","true"),setTimeout(()=>document.getElementById("da-float-auth").style.display="none",3000)}});if(window.location.hostname.includes("shopee.vn"))Z()();I()();
 
-//# debugId=AA4F7E916E32F14364756E2164756E21
+//# debugId=4ABD0D9419324AA964756E2164756E21
